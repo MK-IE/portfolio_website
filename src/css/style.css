@@ -1,0 +1,252 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #1e272e;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1e272e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e74c3c;
+}
+
+nav {
+    position: fixed;
+    background-color: #e74c3c;
+    width: 5rem;
+    height: 100vh;
+}
+
+main {
+    margin-left: 5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul > li:first-child {
+    margin-top: 0rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+ul > li {
+    text-align: center;
+}
+
+li {
+    transition: 0.25s background-color ease-out;
+    cursor: pointer;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+li:hover {
+    transition: 0.25s background-color ease-out;
+    background-color: #1e272e;
+}
+
+main > div {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h1 > span,
+h3 > span {
+    color: #e74c3c;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+button {
+    transition: 0.25s ease-out;
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    transition: 0.25s all ease-in-out;
+    filter: grayscale(30%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* size */
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* -- Pages -- */
+
+#my-info {
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: black;
+    border-radius: 0.5rem;
+}
+
+#me-svg {
+    width: 300px;
+}
+
+/* -- CLass Components -- */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.p-container {
+    max-width: 60%;
+}
+
+.w-100 {
+    width: 100vw;
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+.p-w-100 {
+    width: 100%;
+}
+
+.p-w-90 {
+    width: 90%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Portfolio components */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.project {
+    position: relative;
+    cursor: pointer;
+}
+
+.project-img {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/6/63/IMG_%28business%29.svg/1200px-IMG_%28business%29.svg.png");
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 2rem;
+}
+
+.project-description {
+    transition: 1s ease-out all;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.project-description:hover {
+    transition: 1s ease-in all;
+    opacity: 1;
+    text-align: center;
+    background-color: #e74c3c;
+    border-radius: 2rem;
+}
+
+/* Margin settings */
+
+.mt-1 {
+    margin-top: 4rem;
+}
+
+.mt-5 {
+    margin-top: 1rem;
+}
+
+.ml-2 {
+    margin-left: 3rem;
+}
+
+.mr-2 {
+    margin-right: 3rem;
+}
+
+/* Position */
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-x {
+    display: flex;
+    justify-content: center;
+}
+
+.center-y {
+    display: flex;
+    align-items: center;
+}
+
+.content-between {
+    display: flex;
+    justify-content: space-between;
+}
