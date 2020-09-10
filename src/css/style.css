@@ -1,10 +1,14 @@
+:root {
+    font-size: 16px;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-:root {
-    font-size: 16px;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,12 +32,17 @@ ul {
     height: 100%;
 }
 
+ul > a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
 li {
     transition: background-color 1s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 5rem;
     cursor: pointer;
 }
@@ -41,16 +50,6 @@ li {
 li:hover {
     transition: background-color 1s ease-in-out;
     background-color: #1e272e;
-}
-
-ul > li > a {
-    text-decoration: none;
-    color: white;
-}
-
-.icon {
-    font-size: 2.5rem;
-    font-weight: 700;
 }
 
 h1 {
@@ -61,9 +60,19 @@ h2 {
     font-size: 2.5rem;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
 main {
     margin-left: 5rem;
 }
+
+/* id Components */
 
 #intro {
     display: flex;
@@ -76,8 +85,66 @@ main {
     font-weight: 700;
 }
 
+/* class Components */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.p-container {
+    width: 100%;
+    max-width: 540px;
+    font-weight: 400;
+    color: #f1f2f6;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
 .text-center {
     text-align: center;
+}
+
+.box {
+    padding: 2rem;
+    background-color: #2f3542;
+    border-radius: 0.5rem;
+}
+
+.title {
+    transition: color 0.5s ease-in-out;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.icon {
+    fill: white;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .main-highlight {
@@ -87,10 +154,31 @@ main {
 .blinking-cursor {
     animation: 1s blink step-end infinite;
 }
+/* media n keyframes */
+
+@media only screen and(min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media only screen and(max-width: 1440px) {
+    .container {
+        max-width: 1140px;
+    }
+}
 
 @media only screen and (max-width: 700px) {
     :root {
         font-size: 12px;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    .row {
+        flex-direction: column;
     }
 
     main {
@@ -111,6 +199,10 @@ main {
         flex-direction: row;
         justify-content: center;
         height: 100%;
+    }
+
+    ul > a:first-child {
+        display: none;
     }
 }
 
