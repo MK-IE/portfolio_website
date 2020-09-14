@@ -7,79 +7,42 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
         <title>Marcin Krzykowski</title>
     </head>
     <body>
         <header>
             <nav>
-                <ul>
-                    <a href="#intro" class="title"> <li>MK</li></a>
-
-                    <a href="#about-me">
-                        <li>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                width="24"
-                                class="icon"
+                <div class="nav-bar">
+                    <div class="nav-item">
+                        <a href="#intro" class="title"> MK </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#about-me">
+                            <span class="icon material-icons">person</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#projects">
+                            <span class="icon material-icons">folder</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#contact-me">
+                            <span class="icon material-icons"
+                                >local_post_office</span
                             >
-                                <path d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-                                />
-                            </svg>
-                        </li>
-                    </a>
-                    <a href="#projects">
-                        <li>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                width="24"
-                                class="icon"
-                            >
-                                <path d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"
-                                />
-                            </svg>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                width="24"
-                                class="icon"
-                            >
-                                <path d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                                />
-                            </svg>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                width="24"
-                                class="icon"
-                            >
-                                <path d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-                                />
-                            </svg>
-                        </li>
-                    </a>
-                </ul>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#blog">
+                            <span class="icon material-icons">create</span>
+                        </a>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
@@ -91,62 +54,113 @@
                             <span class="main-highlight">Krzykowski</span>
                         </h1>
                         <h2>
-                            <span id="type">Making experinces that matter.</span
+                            <span id="type"></span
                             ><span class="blinking-cursor">|</span>
                         </h2>
                     </div>
+                    <div id="contact-info">
+                        <div class="center-between">
+                            <div class="circle-icon center-x center-y">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/MarcinKrzykowski"
+                                    >g</a
+                                >
+                            </div>
+                            <div class="circle-icon center-x center-y">
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/marcin-krzykowski-7711b01b4/"
+                                    >l</a
+                                >
+                            </div>
+                            <div class="circle-icon center-x center-y">
+                                <a
+                                    href="mailto:marcin.krzykowski.2018@mumail.ie"
+                                    >e</a
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="about-me" class="mt-5">
+                <div id="about-me" class="mt-5 mb-5">
                     <h3 class="text-center">
                         ABOUT <span class="main-highlight">ME</span>
                     </h3>
                     <div class="box row mt-2">
-                        <div class="col p-container">
-                            <p class="p-container">
-                                A picture or something idk.
-                            </p>
-                        </div>
                         <div class="mt-1 col">
                             <h4>Hey there ! 👋</h4>
                             <p class="mt-1 p-container">
                                 I am a recent college graduate wanting to break
                                 into the industry, develop beautiful web
                                 applications, make friends and overall have a
-                                positive impact.
+                                positive impact 😊
                             </p>
                             <p class="mt-1 p-container">
-                                My current area of interest is making websites
-                                which work across range of screen sizes,
-                                developing web applications that can be
-                                interacted used any device.
+                                My current area of interest is developing
+                                websites and web applications which work across
+                                range of screen sizes. I believe web is the
+                                future and I want to be part of improving it and
+                                making awesome stuff 🌐
                             </p>
                             <p class="mt-1 p-container">
-                                I love running and overall being active.
+                                I love running and excercising ! Physical shape
+                                is very important to me, so I can always perform
+                                at my 100% 🏃‍♂️ 🏋️
                             </p>
+                            <p class="mt-1 p-container">
+                                When not coding, I like to read and learn to
+                                stay up to date with all current technologies
+                                and improve my skillset 📚
+                            </p>
+                            <div class="mt-1">
+                                <button href="#">VIEW MY CV</button>
+                            </div>
                         </div>
+                        <div
+                            class="mt-1 col"
+                            id="mini-editor"
+                            tabindex="-1"
+                        ></div>
                     </div>
                     <div id="projects" class="mt-5">
                         <h3 class="text-center">
-                            <span class="main-highlight">MY </span> EXPERIENCE
+                            <span class="main-highlight">MY </span>PROJECTS
                         </h3>
-                        <div class="box row mt-2">
-                            <div class="mt-1 col p-container">
-                                <h4>Experience</h4>
-                                <p class="mt-1 p-container">
-                                    A picture or something idk.
-                                </p>
-                            </div>
-                            <div class="mt-1 col">
-                                <h4>Education
+                        <div class="box mt-2">
+                            <div class="sub-box mt-1">
+                                <h4 class="underline">
+                                    Foodber - Tinder but for food.
                                 </h4>
                                 <p class="mt-1 p-container">
-                                    I am a recent college graduate wanting to break
-                                    into the industry, develop beautiful web
-                                    applications, make friends and overall have a
-                                    positive impact.
+                                    You have a platform for choosing the right
+                                    partner for you. But what about the right
+                                    food ? Have you ever wanted to just swipe
+                                    and see the 'right' meal for you ?
                                 </p>
+                                <div class="mt-1">
+                                    <button>Check this project out!</button>
+                                </div>
+                            </div>
+                            <div class="sub-box mt-1">
+                                <h4 class="underline">
+                                    DrawingTogetha - Draw with your friends on a
+                                    shared canvas!
+                                </h4>
+                                <p class="mt-1 p-container">
+                                    Have you ever wanted to draw something with
+                                    your friends ? A way where everyone can
+                                    share and draw on a canvas from any device
+                                    of any resolution ? Now you can! With
+                                    DrawingTogetha you can take drawing with
+                                    friends to the next level.
+                                </p>
+                                <div class="mt-1">
+                                    <button>Check this project out!</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </main>
