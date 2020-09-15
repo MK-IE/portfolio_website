@@ -4,6 +4,7 @@ export default class Dinosaur {
     constructor(elementId) {
         this.terminal = document.getElementById(elementId);
         this.lineIndex = 0;
+        this.lineCharacterIndex = 0;
         this.preventKeys = KEYS_TO_PREVENT;
         this.ignoreKeys = KEYS_TO_IGNORE;
         this.terminal.innerHTML += `<div name="1" class="line"></div>`;
@@ -23,6 +24,31 @@ export default class Dinosaur {
         }"class="line"></div>`;
     }
 
+    moveUpLine() {
+        if (this.lineIndex > 0) {
+            this.lineIndex--;
+        }
+    }
+
+    moveDownLine() {
+        if (this.lineIndex < this.terminal.children.length - 1) {
+            this.lineIndex++;
+        }
+    }
+
+    moveCharacterLeft() {
+        if (this.lineCharacterIndex > 0) {
+            this.lineCharacterIndex--;
+        }
+    }
+
+    moveCharacterRight() {
+        const currentLine = this.terminal.children[this.lineIndex];
+        if (this.lineCharacterIndex < currentLine.textContent.length - 1) {
+            this.lineCharacterIndex++;
+        }
+    }
+
     deleteCharacter(line, start, end) {
         return line.substring(start, end);
     }
@@ -35,6 +61,7 @@ export default class Dinosaur {
 
     writeCode(key) {
         const currentLine = this.terminal.children[this.lineIndex];
+        const currentLineText = currentLine.textContent.split("");
 
         for (let keyIndex = 0; keyIndex < this.ignoreKeys.length; keyIndex++) {
             if (key.toLowerCase() === this.ignoreKeys[keyIndex]) {
@@ -48,24 +75,39 @@ export default class Dinosaur {
                 this.addNewLine();
                 break;
             case "backspace":
-                let terminalText = currentLine.textContent;
-                this.checkIfLineIsEmpty(terminalText);
-                currentLine.textContent = this.deleteCharacter(
-                    terminalText,
-                    0,
-                    terminalText.length - 1
-                );
+                this.checkIfLineIsEmpty(currentLineText);
+                currentLineText.pop();
+                break;
+            case "arrowup":
+                this.moveUpLine();
+                console.log("moveup");
+                break;
+            case "arrowdown":
+                this.moveDownLine();
+                console.log("movedown");
+                break;
+            case "arrowleft":
+                this.moveCharacterLeft();
+                break;
+            case "arrowright":
+                console.log(this.lineCharacterIndex);
+                this.moveCharacterRight();
                 break;
             case " ":
-                currentLine.textContent += " ";
+                currentLineText.push(" ");
                 break;
             case "tab":
-                currentLine.textContent += " ";
+                currentLineText.push(" ");
                 break;
             default:
-                currentLine.textContent += key;
+                if (this.lineCharacterIndex > 0) {
+                    currentLineText.splice(this.lineCharacterIndex, 0, key);
+                } else {
+                    currentLineText.push(key);
+                }
                 break;
         }
+        currentLine.textContent = currentLineText.join("");
     }
 
     keyboard(event) {

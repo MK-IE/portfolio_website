@@ -65,6 +65,11 @@ button:hover {
     filter: grayscale(50%);
 }
 
+footer {
+    position: relative;
+    text-align: center;
+}
+
 /* id Components */
 
 #intro {
@@ -83,9 +88,8 @@ button:hover {
 }
 
 #mini-editor {
-    margin-left: 2rem;
     background-color: #353b48;
-    border-radius: 1rem;
+    margin-left: 2rem;
     color: #f5f6fa;
 }
 
@@ -157,10 +161,13 @@ button:hover {
 }
 
 .line::before {
+    display: inline-block;
+    text-align: center;
     content: attr(name);
     color: black;
     background-color: white;
     width: 2rem;
+    height: 100%;
     margin-right: 0.5rem;
 }
 
@@ -233,6 +240,21 @@ button:hover {
     color: #e74c3c;
 }
 
+.wave,
+.heart-beat {
+    display: inline-block;
+}
+
+.wave {
+    animation: 0.8s wave-anim infinite;
+    animation-direction: alternate;
+}
+
+.heart-beat {
+    animation: 1s beat infinite;
+    animation-direction: alternate;
+}
+
 .blinking-cursor {
     animation: 1s blink step-end infinite;
 }
@@ -283,6 +305,26 @@ button:hover {
 
     .nav-item {
         width: 100%;
+    }
+}
+
+@keyframes wave-anim {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes beat {
+    from {
+        font-size: 0.5rem;
+    }
+
+    to {
+        font-size: 1rem;
     }
 }
 
