@@ -1,3 +1,4 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -9,11 +10,12 @@ module.exports = {
                 use: ["html-loader"],
             },
             {
-                test: /\.(svg|png|jpe?g|gif)$/,
+                test: /\.(svg|png|jpe?g|gif|woff|woff2|eot|ttf|otf)$/,
                 loader: "file-loader",
                 options: {
-                    name: "[name].[hash].[ext]",
-                    outputPath: "css/images",
+                    name: "[name].[ext]",
+                    publicPath: "webfonts",
+                    outputPath: "css/webfonts",
                 },
             },
         ],

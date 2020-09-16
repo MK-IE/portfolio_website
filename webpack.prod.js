@@ -9,7 +9,9 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = merge(common, {
     mode: "production",
     plugins: [
-        new MiniExtraCssPlugin({ filename: "css/[name].[contentHash].css" }),
+        new MiniExtraCssPlugin({
+            filename: "css/[name].[contentHash].css",
+        }),
         new CleanWebpackPlugin(),
     ],
     output: {
