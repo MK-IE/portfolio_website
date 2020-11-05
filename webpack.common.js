@@ -8,16 +8,7 @@ module.exports = {
             {
                 test: /\.html$/,
                 use: ["html-loader"],
-            },
-            {
-                test: /\.(svg|png|jpe?g|gif|woff|woff2|eot|ttf|otf)$/,
-                loader: "file-loader",
-                options: {
-                    name: "[name].[ext]",
-                    publicPath: "webfonts",
-                    outputPath: "css/webfonts",
-                },
-            },
+            }
         ],
     },
     plugins: [

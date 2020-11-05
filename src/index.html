@@ -17,151 +17,60 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="nav-bar">
-                    <div class="nav-item">
-                        <a href="#intro" class="title"> MK </a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#about-me">
-                            <i class="icon fas fa-user-alt"></i>
-                        </a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="#projects">
-                            <i class="icon fas fa-folder"></i>
-                        </a>
+            <nav id="nav-bar">
+                <div class="nav-inside hide">
+                    <h3>Projects</h3>
+                    <div>
+                        <a
+                            target="_blank"
+                            href="https://drawingwithfriendstogetha.herokuapp.com"
+                            title="Visit the drawing togetha project"
+                            >Drawing Togetha</a
+                        >
                     </div>
                 </div>
             </nav>
-        </header>
-        <main class="container mx-auto">
-            <div id="intro">
-                <div class="text-center">
+            <section
+                class="container h-100 center-x center-y"
+                style="margin: 0 auto"
+            >
+                <div style="text-align: center">
                     <h1 id="name">
-                        Marcin
-                        <span class="main-highlight">Krzykowski</span>
+                        Marcin <span style="color: #e74c3c">Krzykowski</span>
                     </h1>
-                    <h2>
-                        <span id="type"></span
-                        ><span class="blinking-cursor">|</span>
-                    </h2>
+                    <h2>Love to code</h2>
+                    <a
+                        target="_blank"
+                        href="https://github.com/MarcinKrzykowski"
+                        title="Visit my github"
+                    >
+                        <i
+                            class="circle-icon fab fa-github-square"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                    <a
+                        target="_blank"
+                        href="
+                        https://www.linkedin.com/in/marcin-krzykowski-7711b01b4"
+                        title="Visit my linkedin"
+                    >
+                        <i
+                            class="circle-icon fab fa-linkedin"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+                    <a
+                        target="_blank"
+                        href="misc/resume.pdf"
+                        title="Download my resume"
+                        ><i
+                            class="circle-icon fa fa-address-card"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
                 </div>
-                <div id="contact-info">
-                    <div class="center-between">
-                        <div class="mr-1 center-x center-y">
-                            <a
-                                target="_blank"
-                                href="https://github.com/MarcinKrzykowski"
-                                ><i class="circle-icon fab fa-github-square"></i
-                            ></a>
-                        </div>
-                        <div class="ml-1 mr-1 center-x center-y">
-                            <a
-                                target="_blank"
-                                href="https://www.linkedin.com/in/marcin-krzykowski-7711b01b4/"
-                                ><i class="circle-icon fab fa-linkedin"></i
-                            ></a>
-                        </div>
-                        <div class="ml-1 center-x center-y">
-                            <a href="mailto:marcin.krzykowski.2018@mumail.ie"
-                                ><i class="circle-icon fas fa-envelope"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="about-me" class="mt-5 mb-5">
-                <h3 class="text-center">
-                    ABOUT <span class="main-highlight">ME</span>
-                </h3>
-                <div class="box row mt-2">
-                    <div class="mt-1 col">
-                        <h4>Hey there ! <span class="wave">👋</span></h4>
-                        <p class="mt-1 p-container">
-                            I am a recent college graduate wanting to break into
-                            the industry, develop beautiful web applications,
-                            make friends and overall have a positive impact 😊
-                        </p>
-                        <p class="mt-1 p-container">
-                            My current area of interest is developing websites
-                            and web applications which work across range of
-                            screen sizes. I believe web is the future and I want
-                            to be part of improving it and making awesome stuff
-                            🌐
-                        </p>
-                        <p class="mt-1 p-container">
-                            I love running and excercising ! Physical shape is
-                            very important to me, so I can always perform at my
-                            100% 🏃‍♂️ 🏋️
-                        </p>
-                        <p class="mt-1 p-container">
-                            When not coding, I like to read and learn to stay up
-                            to date with all current technologies and improve my
-                            skillset 📚
-                        </p>
-                        <div class="mt-2">
-                            <a class="primary-btn" href="misc/cv.pdf"
-                                >VIEW MY CV</a
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div id="projects" class="mt-5">
-                    <h3 class="text-center">
-                        <span class="main-highlight">MY </span>PROJECTS
-                    </h3>
-                    <div class="box mt-2">
-                        <div class="sub-box mt-1 mb-2">
-                            <h4 class="underline">
-                                Foodber - Tinder but for food.
-                            </h4>
-                            <p class="mt-1 p-container">
-                                You have a platform for choosing the right
-                                partner for you. But what about the right food ?
-                                Have you ever wanted to just swipe and see the
-                                'right' meal for you ?
-                            </p>
-                            <div class="mt-2">
-                                <a
-                                    class="primary-btn"
-                                    target="_blank"
-                                    href="https://github.com/MarcinKrzykowski/foodber"
-                                    >Check this project out!</a
-                                >
-                            </div>
-                        </div>
-                        <div class="sub-box mt-1">
-                            <h4 class="underline">
-                                DrawingTogetha - Draw with your friends on a
-                                shared canvas!
-                            </h4>
-                            <p class="mt-1 p-container">
-                                Have you ever wanted to draw something with your
-                                friends ? A way where everyone can share and
-                                draw on a canvas from any device of any
-                                resolution ? Now you can! With DrawingTogetha
-                                you can take drawing with friends to the next
-                                level.
-                            </p>
-                            <div class="mt-2">
-                                <a
-                                    class="primary-btn"
-                                    target="_blank"
-                                    href="https://github.com/MarcinKrzykowski/drawingtogetha"
-                                    >Check this project out!</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="mt-5 mx-auto">
-            Written with
-            <a href="https://github.com/MarcinKrzykowski" target="_blank"
-                ><span class="heart-beat">❤️</span>
-            </a>
-        </footer>
+            </section>
+        </header>
     </body>
 </html>
