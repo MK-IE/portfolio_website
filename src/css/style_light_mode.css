@@ -25,7 +25,7 @@ a {
 }
 
 .project-container {
-    position: relative;
+    transition: transform 1s ease-in-out;
     height: 26rem;
     white-space: nowrap;
 }
@@ -49,6 +49,10 @@ a {
 .project-btn,
 .project-btn-right {
     position: absolute;
+}
+
+.project-btn-left {
+    left: 0;
 }
 
 .project-btn-right {
