@@ -1,10 +1,11 @@
 import React from "react";
-import MainPage from "./components/MainPage";
+import { BrowserRouter as Router } from "react-router-dom";
+import Card from "./components/Card";
 
 const App = () => (
-    <div>
-        <MainPage />
-    </div>
+    <Router>
+        <Card />
+    </Router>
 );
 
 export default App;
