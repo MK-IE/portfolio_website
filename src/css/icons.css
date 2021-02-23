@@ -1,0 +1,21 @@
+.hackerrank,
+.linkedin,
+.github {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-family: 'icons';
+    text-transform: none;
+}
+
+.hackerrank::before {
+    content: '\e900';
+}
+
+.linkedin::before {
+    content: '\e901';
+}
+
+.github::before {
+    content: '\e902';
+}
