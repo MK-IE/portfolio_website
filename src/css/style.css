@@ -126,7 +126,8 @@ a:hover {
 }
 
 .project-showcase img {
-    width: 15rem;
+    width: 240px;
+    height: 125px;
     border-radius: 1rem;
 }
 

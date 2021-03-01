@@ -1,15 +1,15 @@
 import React from 'react';
-import DRAWING_TOGETHA from '../../css/images/drawing-togetha.webp';
-import FOODBER from '../../css/images/foodber.webp';
-import FOOD_PYRAMID from '../../css/images/food-pyramid.webp';
-import SIMON_SAYS from '../../css/images/simon-says.webp';
-import CREATE_REACT_INVESTMENT from '../../css/images/create-react-investment.webp';
-import TABLE from '../../css/images/table.webp';
-import PROJECT_16X16 from '../../css/images/project-16x16.webp';
+import DRAWING_TOGETHA from '../../css/converted/drawing-togetha.webp';
+import FOODBER from '../../css/converted/foodber.webp';
+import FOOD_PYRAMID from '../../css/converted/food-pyramid.webp';
+import SIMON_SAYS from '../../css/converted/simon-says.webp';
+import CREATE_REACT_INVESTMENT from '../../css/converted/create-react-investment.webp';
+import TABLE from '../../css/converted/table.webp';
+import PROJECT_16X16 from '../../css/converted/project-16x16.webp';
 
 const Project = ({ img, title, href }) => (
     <div className='project-showcase'>
-        <a href={href} target='_blank'>
+        <a href={href} rel='noopener' target='_blank'>
             <img src={img} alt={title} />
         </a>
     </div>

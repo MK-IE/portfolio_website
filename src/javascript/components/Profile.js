@@ -9,16 +9,25 @@ const Profile = () => (
         <h1>Marcin Krzykowski</h1>
         <h2>Upcoming front-end developer</h2>
         <div id='social-media'>
-            <a href='https://github.com/InferNovac' target='_blank'>
+            <a
+                href='https://github.com/InferNovac'
+                rel='noopener'
+                target='_blank'
+            >
                 <i class='github icon'></i>
             </a>
             <a
                 href='https://www.linkedin.com/in/marcin-krzykowski-7711b01b4/'
+                rel='noopener'
                 target='_blank'
             >
                 <i class='linkedin icon'></i>
             </a>
-            <a href='https://www.hackerrank.com/InferNova' target='_blank'>
+            <a
+                href='https://www.hackerrank.com/InferNova'
+                rel='noopener'
+                target='_blank'
+            >
                 <i class='hackerrank icon'></i>
             </a>
         </div>

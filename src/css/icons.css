@@ -8,11 +8,11 @@
     text-transform: none;
 }
 
-.hackerrank::before {
+.linkedin::before {
     content: '\e900';
 }
 
-.linkedin::before {
+.hackerrank::before {
     content: '\e901';
 }
 

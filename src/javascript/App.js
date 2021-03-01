@@ -1,13 +1,12 @@
 import React from 'react';
 import Profile from './components/Profile';
-import Showcase from './components/Showcase';
 import Projects from './components/Projects';
 
 const App = () => (
-    <Showcase>
+    <main>
         <Profile />
         <Projects />
-    </Showcase>
+    </main>
 );
 
 export default App;
